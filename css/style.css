@@ -12,14 +12,14 @@ img {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url(/assets/fonts/oswaldregular.woff2) format("woff2"), url(/assets/fonts/oswaldregular.woff) format("woff");
+  src: url(../assets/fonts/oswaldregular.woff2) format("woff2"), url(../assets/fonts/oswaldregular.woff) format("woff");
 }
 @font-face {
   font-display: swap;
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  src: url(/assets/fonts/oswaldmedium.woff2) format("woff2"), url(/assets/fonts/oswaldmedium.woff) format("woff");
+  src: url(../assets/fonts/oswaldmedium.woff2) format("woff2"), url(../assets/fonts/oswaldmedium.woff) format("woff");
 }
 
 .visually-hidden {
@@ -441,7 +441,7 @@ img {
   .promo {
     color: #fff;
     text-align: center;
-    background-image: url(/assets/background/promo-back-mobile.jpg), linear-gradient(#63a63b, #63a63b 302px, #fff 302px);
+    background-image: url(../assets/background/promo-back-mobile.jpg), linear-gradient(#63a63b, #63a63b 302px, #fff 302px);
     background-position: 50%0;
     background-repeat: no-repeat;
     background-size: auto 302px;
@@ -449,7 +449,7 @@ img {
 }
 @media (max-width: 767px) and (min-resolution: 2dppx) {
   .promo {
-    background-image: url(/assets/background/promo-back-mobile@2x.jpg), linear-gradient(#63a63b, #63a63b 302px, #fff 302px);
+    background-image: url(../assets/background/promo-back-mobile@2x.jpg), linear-gradient(#63a63b, #63a63b 302px, #fff 302px);
   }
 }
 @media (min-width: 1320px) {
@@ -482,14 +482,14 @@ img {
     bottom: 0;
     z-index: -2;
     background-color: #63a63b;
-    background-image: url(./assets/background/promo-back-desktop.jpg);
+    background-image: url(../assets/background/promo-back-desktop.jpg);
     background-repeat: no-repeat;
     background-position: 0 100%;
   }
 }
 @media (min-width: 1320px) and (min-resolution: 2dppx) {
   .promo__wrapper::after {
-    background-image: url(/assets/background/promo-back-desktop@2x.jpg);
+    background-image: url(../assets/background/promo-back-desktop@2x.jpg);
     background-size: auto 690px;
   }
 }
@@ -660,7 +660,7 @@ img {
   background-size: contain;
 }
 .catalogues__item--slim .catalogues__title::after {
-  background-image: url(/assets/icons/ico-cat-slim.svg);
+  background-image: url(../assets/icons/ico-cat-slim.svg);
 }
 @media (max-width: 767px) {
   .catalogues__item--slim .catalogues__title::after {
@@ -679,7 +679,7 @@ img {
   }
 }
 .catalogues__item--pro .catalogues__title::after {
-  background-image: url(/assets/icons/ico-cat-pro.svg);
+  background-image: url(../assets/icons/ico-cat-pro.svg);
 }
 @media (max-width: 767px) {
   .catalogues__item--pro .catalogues__title::after {
@@ -761,12 +761,12 @@ img {
   top: 50%;
   right: 8px;
   transform: translateY(-50%);
-  background: url(/assets/icons/ico-arrow.svg) no-repeat center;
+  background: url(../assets/icons/ico-arrow.svg) no-repeat center;
 }
 .catalogues__link:hover::after {
   width: 32px;
   right: 0;
-  background: url(/assets/icons/ico-arrow-active.svg) no-repeat center;
+  background: url(../assets/icons/ico-arrow-active.svg) no-repeat center;
 }
 .catalogues__link:active {
   opacity: 0.3;
@@ -861,16 +861,16 @@ img {
   }
 }
 .functional__item--nutrient::before {
-  background-image: url(/assets/icons/ico-leaf.svg);
+  background-image: url(../assets/icons/ico-leaf.svg);
 }
 .functional__item--powder::before {
-  background-image: url(/assets/icons/ico-tub.svg);
+  background-image: url(../assets/icons/ico-tub.svg);
 }
 .functional__item--diet::before {
-  background-image: url(/assets/icons/ico-eat.svg);
+  background-image: url(../assets/icons/ico-eat.svg);
 }
 .functional__item--result::before {
-  background-image: url(/assets/icons/ico-alarm.svg);
+  background-image: url(../assets/icons/ico-alarm.svg);
 }
 @media (max-width: 767px) {
   .functional__title {
