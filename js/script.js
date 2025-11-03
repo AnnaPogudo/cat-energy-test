@@ -60,3 +60,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
+ymaps.ready(() => {
+    const center = [59.9387165, 30.3230474];
+    const map = new ymaps.Map("map", {
+        center: center,
+        zoom: 15
+    });
+
+    const placemark = new ymaps.Placemark(center, {}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'assets/icons/map-pin.svg',
+        iconImageSize: [70, 70],
+        iconImageOffset: [-15, -42]
+    });
+
+    map.geoObjects.add(placemark);
+});
