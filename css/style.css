@@ -771,3 +771,117 @@ img {
 .catalogues__link:active {
   opacity: 0.3;
 }
+
+
+.functional__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  color: #444;
+  list-style-type: none;
+  counter-reset: item;
+}
+@media (max-width: 767px) {
+  .functional__list {
+    row-gap: 22px;
+  }
+}
+@media (min-width: 768px) {
+  .functional__list {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 31px 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 1320px) {
+  .functional__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 60px 80px;
+  }
+}
+.functional__item {
+  position: relative;
+  display: grid;
+  word-break: break-word;
+}
+@media (max-width: 767px) {
+  .functional__item {
+    grid-template-columns: 60px 1fr;
+    column-gap: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .functional__item {
+    grid-template-rows: 80px 1fr;
+    row-gap: 31px;
+    min-height: 286px;
+    padding-right: 79px;
+  }
+}
+@media (min-width: 1320px) {
+  .functional__item {
+    min-height: 240px;
+    padding-right: 0;
+  }
+}
+.functional__item::before {
+  content: "";
+  background: #68b738 no-repeat center;
+}
+@media (max-width: 767px) {
+  .functional__item::before {
+    width: 60px;
+    height: 60px;
+    margin-top: -2px;
+  }
+}
+@media (min-width: 768px) {
+  .functional__item::before {
+    width: 80px;
+    height: 80px;
+  }
+  .functional__item::after {
+    position: absolute;
+    z-index: -1;
+    top: -37px;
+    right: 79px;
+    counter-increment: item;
+    content: counter(item);
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 280px;
+    line-height: 1;
+    text-align: right;
+    color: #f2f2f2;
+  }
+}
+@media (min-width: 1320px) {
+  .functional__item::after {
+    right: 0;
+  }
+}
+.functional__item--nutrient::before {
+  background-image: url(/assets/icons/ico-leaf.svg);
+}
+.functional__item--powder::before {
+  background-image: url(/assets/icons/ico-tub.svg);
+}
+.functional__item--diet::before {
+  background-image: url(/assets/icons/ico-eat.svg);
+}
+.functional__item--result::before {
+  background-image: url(/assets/icons/ico-alarm.svg);
+}
+@media (max-width: 767px) {
+  .functional__title {
+    margin-bottom: 40px;
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .functional__title {
+    margin-bottom: 72px;
+    font-size: 60px;
+  }
+}
