@@ -98,7 +98,58 @@
       </div>
     </section>
 
+
+    <section class="page-main__example example">
+      <div class="example__wrapper container">
+        <div class="example__info">
+          <h2 class="example__title page__title">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.</p>
+          <dl class="example__stats">
+            <div class="example__stat">
+              <dt class="example__stat-term">Cнижение веса</dt>
+              <dd class="example__stat-value">5 кг</dd>
+            </div>
+            <div class="example__stat">
+              <dt class="example__stat-term">Затрачено времени</dt>
+              <dd class="example__stat-value">60 дней</dd>
+            </div>
+          </dl>
+          <dl class="example__total">
+            <dt class="example__total-term">Затраты на питание:</dt>
+            <dd class="example__total-value">15 000 руб.</dd>
+          </dl>
+        </div>
+
+        <div class="example__slider">
+          <div class="example__images">
+            <div class="example__image example__image--before">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="./assets/images/index/cat-before-tablet.png 1x, ./assets/images/index/cat-before-tablet@2x.png 2x">
+                <img src="./assets/images/index/cat-before-mobile.png" alt="Толстый кот до питания кормом">
+              </picture>
+            </div>
+
+            <div class="example__image example__image--after">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="./assets/images/index/cat-after-tablet.png 1x, ./assets/images/index/cat-after-tablet@2x.png 2x">
+                <img src="./assets/images/index/cat-after-mobile.png" alt="Худой кот после питания кормом">
+              </picture>
+            </div>
+          </div>
+
+          <div class="example__controls">
+            <button class="example__control example__control--before" type="button">Было</button>
+            <input class="example__range" type="range" min="0" max="100" value="50">
+            <button class="example__control example__control--after" type="button">Стало</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
+  <script src="./js/script.js"></script>
 </body>
 </html>
